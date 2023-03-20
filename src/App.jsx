@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Landing, Home, Dashboard, Analytics, Admin } from "./pages";
 
 export function App() {
   return (
     <BrowserRouter>
-
-      {/* <Navigation /> */}
+    
+      <Navigation />
 
       <Routes>
         <Route path="/" element={<Landing />} />
@@ -18,27 +18,26 @@ export function App() {
     </BrowserRouter>
   );
 }
-// function Navigation() {
-//   return (
-    // <nav>
-      {/* <ul> */}
-        {/* <li> */}
-          {/* <Link to="/landing">Landing</Link> */}
-        {/* </li> */}
-        {/* <li> */}
-          {/* <Link to="/home">Home</Link> */}
-        {/* </li> */}
-        {/* <li> */}
-          {/* <Link to="/dashboard">Dashboard</Link> */}
-        {/* </li> */}
-        {/* <li> */}
-          {/* <Link to="/analytics">Analytics</Link> */}
-        {/* </li> */}
-        {/* <li> */}
-          {/* <Link to="/admin">Admin</Link> */}
-        {/* </li> */}
-      {/* </ul> */}
-    {/* </nav> */}
-//   );
-// }
-// 
+function Navigation() {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/landing">Landing</Link>
+        </li>
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
+        <li>
+          <Link to="/analytics">Analytics</Link>
+        </li>
+        <li>
+          <Link to="/admin">Admin</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}
