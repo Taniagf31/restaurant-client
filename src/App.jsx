@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { Landing, Home, Dashboard, Analytics, Admin } from "./pages";
-
+import {Home, Dashboard, Analytics, Admin } from "./pages";
+import { Login } from "./pages/Login"
 export function App() {
   return (
     <BrowserRouter>
@@ -8,8 +8,8 @@ export function App() {
       <Navigation />
 
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/landing" element={<Landing />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/analytics" element={<Analytics />} />
@@ -23,7 +23,7 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-          <Link to="/landing">Landing</Link>
+          <Link to="/login">Landing</Link>
         </li>
         <li>
           <Link to="/home">Home</Link>

@@ -1,0 +1,72 @@
+* {
+  list-style: none;
+  font-family: "Mitr";
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    display: flex;
+    justify-content: center;
+    background: #2a2f2f;
+  }
+  .logo-sam {
+    align-items: center;
+    margin-top: 70px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 30px;
+    font-family: Mitr;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .grandpa {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  .form {
+    justify-content: center;
+    width: 464px;
+    height: 479px;
+    left: 313px;
+    top: 144px;
+    background: #2a2f2f;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  .inputs {
+    /* flex-direction: column; */
+    column-gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  input {
+    width: 340px;
+    height: 36px;
+    background: #d4a886;
+    border-radius: 19px;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .btn-dad {
+    align-items: flex-start;
+    width: auto;
+    height: 100px;
+  }
+  .btn-signin {
+    width: 118px;
+    height: 36px;
+    background: #d4a886;
+    color: white;
+    border-radius: 37px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
