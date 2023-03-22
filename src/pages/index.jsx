@@ -1,7 +1,5 @@
 
 
-export const Home = () => <h2> Home Page (Private)</h2>
-
 export const Dashboard = () => <h2> Dashboard Page (Private)</h2>
 
 export const Analytics = () => <h2> Analytics (Private, permission: 'analize')</h2>
