@@ -1,7 +1,9 @@
 
 
-export const Dashboard = () => <h2> Dashboard Page (Private)</h2>
+export const Products = () => <h1> Products Page (Private)</h1>
 
-export const Analytics = () => <h2> Analytics (Private, permission: 'analize')</h2>
+export const Orders = () => <h1> Orders (Private)</h1>
 
-export const Admin = () => <h2> Admin (Private, permission: 'admin')</h2>
+export const Users = () => <h1> Users (Private)</h1>
+
+export const Admin = () => <h1> Admin (Private, permission: 'admin')</h1>
