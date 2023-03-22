@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 :root {
   font-family: 'Mitr';
-  background-color: #242424;
+  /* background-color: #242424; */
   text-align: center;
 } 
 *{
@@ -10,6 +9,8 @@
   padding: 0;
 
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
 body{
   width: 1024px;
   height: 768px;

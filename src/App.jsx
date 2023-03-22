@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import {Home, Dashboard, Analytics, Admin } from "./pages";
-import { Login } from "./pages/Login"
+import { Dashboard, Analytics, Admin } from "./pages";
+import { Login } from "./pages/Login";
+import { Home } from "./pages/Home";
+
 export function App() {
   return (
     <BrowserRouter>
