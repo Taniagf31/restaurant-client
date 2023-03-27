@@ -1,14 +1,14 @@
+import "./css-components/Products.css"
+
+export const Products = () => {
+  return (
+    <h1>Products</h1>
+  )
+}
 
 
-// export const Products = () => {
-//   return (
-    // <div>Products</div>
-//   )
-// }
-// 
-// 
-// 
 
+// 
 
 
 

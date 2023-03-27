@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { Products, Orders, Admin, Users } from "./pages";
+import { Orders, Admin, Users } from "./pages";
 import { Login } from "./pages/Login";
 import { Home } from "./pages/Home";
+import { Products } from "./pages/Products";
 
 export function App() {
   return (

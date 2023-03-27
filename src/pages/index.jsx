@@ -1,6 +1,6 @@
 
 
-export const Products = () => <h1> Products Page (Private)</h1>
+// export const Products = () => <h1> Products Page (Private)</h1>
 
 export const Orders = () => <h1> Orders (Private)</h1>
 
