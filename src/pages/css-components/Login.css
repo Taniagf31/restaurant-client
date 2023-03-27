@@ -9,18 +9,19 @@
     background: #2a2f2f;
   }
   .img-logo{
-    width: 230px;
-    height: 210px;
+    width: 240px;
+    height: 220px;
   }
 
   }
-  h2 {
+  .title-log{
     text-align: center;
     color: white;
     font-family: Mitr;
-    font-size:34px;
+    font-size:32px;
     font-style: normal;   
     text-align: center;
+    flex-direction: initial;
   }
   .grandpa {
     display: flex;

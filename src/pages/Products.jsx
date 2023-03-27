@@ -1,6 +1,9 @@
 import "./css-components/Products.css"
 
 export const Products = () => {
+  // Obteniendo el accessToken
+  const user = JSON.parse(localStorage.getItem('access'))
+  const token = user.accessToken;
   return (
     <div className="container-nav">
     <div className="container-logo">
