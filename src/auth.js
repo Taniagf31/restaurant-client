@@ -5,14 +5,15 @@ export const authentication = async ({ email, password }) => { //mi componente t
       headers: {
         "Content-Type": "application/json", 
   
-        "Authorization": "Bearer (token)"    
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8"     
       },
       
       body: JSON.stringify({ email, password }) //JSON a texto plano
     })
       .then(res => {
+        console.log('res', res)
         token = {
-          ...token,
+          ...res,
           ok: false,
           status: res.status
         }
@@ -26,6 +27,7 @@ export const authentication = async ({ email, password }) => { //mi componente t
           message: (token.status == 200) ? "Login ejecutado de forma correcta" : res,
           token: (token.status == 200) ? res : null
         };
+        localStorage.setItem('access', JSON.stringify(res))
       })
       .catch(error => {
         console.log(error, error.response)

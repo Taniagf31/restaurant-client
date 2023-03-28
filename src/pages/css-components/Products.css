@@ -1,3 +1,103 @@
-h1{
-    background-color: blueviolet;
-}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 1024px;
+    height: 768px;
+  }
+  nav {
+    width: 1024px;
+    height: 20px;
+    background-color: D4A886;
+  }
+  .container-logo {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    height: 168px;
+    left: 0px;
+    top: 0px;
+    background: #d4a886;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .img-nav {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+  }
+  .user {
+    position: absolute;
+    width: 71px;
+    height: 74px;
+    left: 680px;
+    top: 62px;
+  }
+  h3 {
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 750px;
+    top: 68px;
+    font-family: "Mitr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+    text-align: center;
+  
+    color: #2a2f2f;
+  }
+  
+  .barra-nav {
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    width: 100%;
+    height: 53px;
+    left: 2px;
+    top: 168px;
+    background: #393e46;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  ul li {
+    margin: 22px;
+    padding: 0;
+    display: inline-block;
+    margin-right: 168px;
+    justify-content: space-between;
+    align-content: space-between;
+    color: #d4a886;
+    font-size: 20px;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+

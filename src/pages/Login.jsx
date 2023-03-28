@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { authentication } from "../auth";
 import "./css-components/Login.css";
+import { useNavigate } from "react-router-dom";
+
 
 export function Login() {
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -17,13 +20,13 @@ export function Login() {
     });
   };
   const onSubmit = async (e) => {
-    e.preventDefault();
-    //console.log("login", email, password)
+    // e.preventDefault();
+    console.log("login", email, password)
     const answer = await authentication({ email, password });
     console.log("token", answer.token.accessToken);
     if (answer.ok == true) {
       localStorage.setItem("user", JSON.stringify(answer.token));
-      navigate("/products");
+      navigate("/home");
     } else {
       alert(answer.message);
     }
@@ -34,7 +37,7 @@ export function Login() {
     <div className="grandpa">
       <div className="form">
         <img className="img-logo" src="/logo.png" alt="logo" />
-        <h2>L O G I N</h2>
+        <h2 className="title-log" >L O G I N</h2>
         <form className="inputs" onSubmit={onSubmit}>
           <input
             type="email"
@@ -52,7 +55,7 @@ export function Login() {
           />
         </form>
         <div className="btn-dad">
-          <button className="btn-signin">Sign in</button>
+          <button className="btn-signin" onClick={onSubmit}>Sign in</button>
         </div>
       </div>
     </div>
