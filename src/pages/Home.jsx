@@ -1,4 +1,5 @@
 import "./css-components/Home.css";
+import {Navigation} from '../App.jsx'
 
 export const Home = () => {
   return (
@@ -9,12 +10,7 @@ export const Home = () => {
         <h3>Susana Admin</h3>
       </div>
       <div className="barra-nav">
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>Orders</li>
-          <li>Users</li>
-        </ul>
+        <Navigation />   
       </div>
 
       <div className="container-home">

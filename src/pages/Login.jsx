@@ -20,10 +20,10 @@ export function Login() {
     });
   };
   const onSubmit = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     console.log("login", email, password)
     const answer = await authentication({ email, password });
-    console.log("token", answer.token.accessToken);
+    // console.log("token", answer.token.accessToken);
     if (answer.ok == true) {
       localStorage.setItem("user", JSON.stringify(answer.token));
       navigate("/home");
