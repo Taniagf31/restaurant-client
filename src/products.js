@@ -1,11 +1,13 @@
-export const getProducts = async (accessToken) => {
+export const getProducts = async () => {
+  const user = JSON.parse(localStorage.getItem("access"));
+  const token = user.accessToken;
   let answer = null;
   await fetch("http://localhost:8080/products", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
 
-      "Authorization": "Bearer " + accessToken,
+      "Authorization": "Bearer " + token,
     },
   })
     .then((res) => {

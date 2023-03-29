@@ -5,25 +5,27 @@ import "./css-components/Products.css";
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
-  const user = JSON.parse(localStorage.getItem('access'));
-  const token = user.accessToken;
-  console.log(token)
+  
   // Obteniendo el accessToken
  
-  const gProducts = async () => {
-    const user = JSON.parse(localStorage.getItem("access"));
-    const token = user.accessToken;
-    console.log(token)
-    const answerP = await getProducts(token);
-    return answerP;
-  };
-  const answer = gProducts();
-  setProducts(answer);
+  // const gProducts = async () => {
+    // const user = JSON.parse(localStorage.getItem("access"));
+    // const token = user.accessToken;
+    // console.log(token)
+    // const answerP = await getProducts(token);
+    
+    // return answerP;
+  // };
+
   console.log(products);
   useEffect(() => {
-    getProducts(); 
-  }, []);
+    const resp = getProducts();
+    resp.then(respuesta => console.log(respuesta));
   
+  }, []);
+
+  // const answer = gProducts();
+  // 
   return (
     <div className="container-nav">
       <div className="container-logo">
