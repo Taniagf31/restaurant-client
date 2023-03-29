@@ -5,7 +5,7 @@ export const authentication = async ({ email, password }) => { //mi componente t
       headers: {
         "Content-Type": "application/json", 
   
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8"     
+        // "Authorization": "Bearer "     
       },
       
       body: JSON.stringify({ email, password }) //JSON a texto plano

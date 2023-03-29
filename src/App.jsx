@@ -7,7 +7,7 @@ import { Products } from "./pages/Products";
 export function App() {
   return (
     <BrowserRouter>
-      <Navigation />
+      {/* <Navigation /> */}
 
       <Routes>
         <Route path="/" element={<Login />} />
@@ -21,13 +21,10 @@ export function App() {
     </BrowserRouter>
   );
 }
-function Navigation() {
+export function Navigation() {
   return (
     <nav>
       <ul>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
         <li>
           <Link to="/home">Home</Link>
         </li>
